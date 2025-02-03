@@ -1,0 +1,23 @@
+.imgGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1f; 
+    row-gap: 1rem;
+    width: 50%;
+}
+.imgcontainer{
+    width: max-content;
+}
+.imgcontainer img{
+    width: 12rem;
+    /* overflow: hidden; */
+    /* width: 100px; */
+    height: 10rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 4px solid wheat ;
+}
+.selected{
+    border: 5px solid black !important;
+}

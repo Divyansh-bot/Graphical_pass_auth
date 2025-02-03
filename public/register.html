@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Graphical Auth</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center">Register for Graphical Authentication</h2>
+
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="contact" placeholder="Contact" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <select id="dropdown_menu" class="form-control" required>
+                <option value="">Select Image Category</option>
+                <option value="animals">Animals</option>
+                <option value="chocolates">Chocolates</option>
+                <option value="companies">Companies</option>
+            </select>
+
+            <div id="imageGrid" class="image-grid"></div>
+
+            <div class="center-btn">
+                <button type="submit" class="btn btn-success btn-block">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/js/register.js"></script>
+</body>
+</html>
